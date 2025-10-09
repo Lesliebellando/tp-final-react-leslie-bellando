@@ -1,16 +1,22 @@
-# React + Vite
+# TP Final - React Pokémon
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
+Este proyecto es el Trabajo Práctico Final del curso de Front-End.  
+Es una aplicación web hecha con **React** y **Vite**, que consume datos de la **PokeAPI** y permite visualizar un listado de Pokémon y al hacer click en cada uno poder visualizar sus detalles. 
 
-Currently, two official plugins are available:
+## Funcionalidades implementadas en el primer commit 
+- Configuración inicial de React con Vite.
+- React Router para navegación entre páginas: Home, Listado.
+- Components: `Navigation` con links a las páginas; `CardPokemon` para mostrar información de cada Pokémon.
+- Componentes reutilizables: Header; Footer.
+- Página `ListadoPokemon` que consume la PokeAPI y muestra 20 Pokémon.
+- Botón “Cargar más” para añadir más Pokémon al listado.
+- Ordenamiento de Pokémon por ID.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+## Tecnologías
+- React
+- JavaScript
+- CSS
+- React Router DOM
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
