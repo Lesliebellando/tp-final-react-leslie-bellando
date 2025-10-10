@@ -8,10 +8,10 @@ function Navigation() {
           <Link to='/'>Home</Link>
         </li>
         <li>
-          <Link to='/listado'>Listado</Link>
+          <Link to='/pokemon'>Listado</Link>
         </li>
         <li>
-          <Link to='/detalle/:id'>Detalle</Link>
+          <Link to='/pokemon/:name'>Detalle</Link>
         </li>
       </ul>
     </nav>

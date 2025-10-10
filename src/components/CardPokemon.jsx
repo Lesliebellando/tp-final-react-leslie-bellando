@@ -1,5 +1,5 @@
 
-import React from "react";
+import { Link } from "react-router-dom";
 
 
 export default function CardPokemon({pokemon}) {
@@ -7,19 +7,15 @@ export default function CardPokemon({pokemon}) {
          <h1>Cargando Pokemon...</h1>
     );}
 
+    
   return (
     <div className="card-pokemon">
-     
-    <div className="card-body"></div> <img src={pokemon.sprites.other["official-artwork"].front_default
+    <div className="card-body">
+      <Link to={`/pokemon/${pokemon.name}`}>
+      <img src={pokemon.sprites.other["official-artwork"].front_default
 } alt={pokemon.name} />
+</Link>
       <h3>{pokemon.name}</h3>
-      <p>Height: {pokemon.height}</p>
-      <p>Weight: {pokemon.weight}</p>
-      <p>Experience: {pokemon.base_experience}</p>
-      <p>ID: {pokemon.id}</p>
-      <p>Type: {pokemon.types.map(typeInfo => typeInfo.type.name).join(", ")}</p>
-    </div>
-  );
-}
-
-
+        <p>ID: {pokemon.id}</p>
+        <p>Type: {pokemon.types.map(typeInfo => typeInfo.type.name).join(", ")}</p>
+  </div>  </div> ) }

@@ -7,7 +7,7 @@ function ListadoPokemon() {
   const [limit, setLimit] = useState(20); // cantidad inicial de pokemones a cargar
   const BASE_URL = "https://pokeapi.co/api/v2/pokemon/";
 
- const getPokemons = async (id) => {
+ const fetchPokemons = async (id) => {
     try {
       const response = await fetch(`${BASE_URL}${id}`);
       const data = await response.json();
@@ -23,26 +23,21 @@ function ListadoPokemon() {
     }
   };
 
-
-const getAllPokemons =  (desde, hasta) => {
+useEffect(() => {
+const fetchAllPokemons =  (desde, hasta) => {
     for (let i = desde; i <= hasta; i++) {
-       getPokemons(i);
+       fetchPokemons(i);
     } 
 };
-
-useEffect(() => {
-    getAllPokemons(1, limit);
+    fetchAllPokemons(limit -19, limit);
 }, [limit]);
 
-useEffect(() => {
-    console.log(pokemons);
-},[pokemons])
 
-  const handleCargarMas = () => {
+  function handleCargarMas() {
     const nuevoLimite = limit + 20; // cada clic carga 20 más
-    getAllPokemons(limit + 1, nuevoLimite);
+    fetchPokemons(limit + 1, nuevoLimite);
     setLimit(nuevoLimite);
-  };
+  }
  const pokemonsOrdenados = [...pokemons].sort((a, b) => a.id - b.id);
   return (
  <>
