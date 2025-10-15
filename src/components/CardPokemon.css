@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+.card-image  {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin: 0 auto;
+}   
+
+.card-pokemon-info {
+    background: linear-gradient(120deg, #ffcc70, #ff8177);
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: -20px;
+    padding: 10px;
+    color: #333;
+}
+.card-title {
+  font-family: 'Orbitron', sans-serif;
+  margin: 10px;
+}
+
+.card-id, .card-type {
+    background-color: aliceblue;
+    border: 2px solid black;
+  font-family: 'Orbitron', sans-serif;
+  margin: 5px 0;
+}

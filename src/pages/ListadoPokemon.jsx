@@ -41,16 +41,23 @@ const fetchAllPokemons =  (desde, hasta) => {
  const pokemonsOrdenados = [...pokemons].sort((a, b) => a.id - b.id);
   return (
  <>
-    <h1>Listado de Pokemon</h1>
-    <div className="card-grid">
-    {pokemonsOrdenados.map((pokemon) => (
-        <CardPokemon key={pokemon.id} pokemon={pokemon} />
+ <div className="container mt-4 mb-4">
+  <h1 className="text-center mb-4">Elige tu Pokémon</h1>
+  <div className="row">
+          {pokemonsOrdenados.map((pokemon) => (
+            <div key={pokemon.id} className="col-md-3 col-sm-6 mb-4">
+            <CardPokemon pokemon={pokemon} />
+          </div>
     ))}
     </div>
-     <div style={{ textAlign: "center", marginTop: "20px" }}>
+     <div className="text-center mt-3 mb-4">
         <button onClick={handleCargarMas}>Cargar más Pokémon</button>
       </div>
+    </div>
+    
+    
+
  </>
   );
 } 
-export default ListadoPokemon; 
+export default ListadoPokemon;  
