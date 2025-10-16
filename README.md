@@ -4,6 +4,16 @@
 Este proyecto es el Trabajo Práctico Final del curso de Front-End.  
 Es una aplicación web hecha con **React** y **Vite**, que consume datos de la **PokeAPI** y permite visualizar un listado de Pokémon y al hacer click en cada uno poder visualizar sus detalles. 
 
+Permite:
+
+Visualizar un listado de Pokémon.
+
+Hacer click en cada Pokémon para ver sus detalles completos (tipo, habilidades, altura, peso, experiencia, imagen).
+
+Navegar fácilmente entre las secciones mediante un navbar responsive y un footer.
+
+El proyecto está pensado para ser responsive, adaptándose correctamente a dispositivos móviles, tablets y desktops.
+
 ## Funcionalidades implementadas
   **segundo commit**
 - Configuración inicial de React con Vite.
@@ -33,6 +43,10 @@ Es una aplicación web hecha con **React** y **Vite**, que consume datos de la *
 
 - Landing Page: cards responsive con información acerca del proyecto y link directo a la lista de Pokemons.
 
+**septimo commit**
+
+- Card detalle responsive.
+
 
 
 ## Tecnologías
@@ -42,8 +56,34 @@ Es una aplicación web hecha con **React** y **Vite**, que consume datos de la *
 - CSS
 - React Router DOM
 
+  ## Herramientas
+
+  - GoogleFonts
+  - Flaticon
+  - React Icons
+ 
+
 
   ## Link al deploy en GitHub Pages
   [Demo en GitHub Pages](https://lesliebellando.github.io/tp-final-react-leslie-bellando/)
+
+
+## ⚙️ Instalación y ejecución
+  
+- Clonar el repositorio
+git clone https://github.com/tuusuario/nombre-del-repo.git
+cd nombre-del-repo
+- Instalar dependencias
+npm install
+- Ejecutar en modo desarrollo
+npm run dev
+- La aplicación se abrirá en http://localhost:5173/ (o el puerto que indique Vite).
+- Build para producción
+npm run build
+
+
+
+
+
 
 
