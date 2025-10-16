@@ -21,17 +21,19 @@ Es una aplicación web hecha con **React** y **Vite**, que consume datos de la *
 - Arreglo de código de ListadoPokemon.
 
 **cuarto commit**
--Navbar responsive con Bootstrap.
--Footer con CSS.
+- Navbar responsive con Bootstrap.
+- Footer con CSS.
 
 **quinto commit**
--Cards para lista de pokémons responsive.
--Cambio de fuente y paleta de colores
+- Cards para lista de pokémons responsive.
+- Cambio de fuente y paleta de colores
 
   
+**sexto commit**
+
+- Landing Page: cards responsive con información acerca del proyecto y link directo a la lista de Pokemons.
 
 
--
 
 ## Tecnologías
 - React
