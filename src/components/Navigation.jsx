@@ -35,7 +35,7 @@ function Navigation() {
           <NavLink className="nav-link" to='/' onClick={handleClose}>Home</NavLink>
         </li>
         <li className='nav-item mx-auto'>
-          <NavLink className="nav-link" to='/pokemon' onClick={handleClose}>Listado</NavLink>
+          <NavLink className="nav-link" to='/pokemon' onClick={handleClose}>Pokemon</NavLink>
         </li>
       </ul>
 </div>

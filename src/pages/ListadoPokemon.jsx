@@ -42,7 +42,7 @@ const fetchAllPokemons =  (desde, hasta) => {
   return (
  <>
  <div className="container mt-4 mb-4">
-  <h1 className="text-center mb-4">Elige tu Pokémon</h1>
+  
   <div className="row">
           {pokemonsOrdenados.map((pokemon) => (
             <div key={pokemon.id} className="col-lg-3 col-md-4 col-sm-6 mb-4">

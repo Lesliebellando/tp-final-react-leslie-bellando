@@ -1,0 +1,121 @@
+.detail-container {
+  min-height: calc(100vh - 200px); /* ocupa casi toda la pantalla */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-detail {
+     margin: 40px auto;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  max-width: 1100px;
+   transition: all 0.3s ease-in-out;
+  
+}
+
+.card-detail:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.15);
+}
+
+.card-detail img {
+  width: 100%;          /* Se ajusta al ancho del contenedor */
+  height: 100%;         /* Ocupa toda la altura disponible */
+  max-height: 350px;    /* Limita el alto para que no se deforme en pantallas grandes */
+  object-fit: contain;  
+  background: linear-gradient(135deg, #f5f7fa, #e2e8f0);/* Mantiene la proporción original */
+  padding: 20px;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-detail img:hover {
+    transform: scale(1.05);
+}
+.card-information {
+    flex: 1;
+    background: linear-gradient(180deg, rgb(255, 255, 144) 0%, #f8dd84 100%);
+     border-left: 3px solid #ffcb05;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 500;
+   justify-content: center;
+
+    padding-left: 20px;
+}
+
+.card-information h3 {
+    margin-left: 20px;
+    margin-top: 20px;
+      font-size: 2rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  color: #333;
+    border-bottom: 3px solid #ffcb05;
+     -webkit-text-stroke: 1px #000; 
+    display: inline-block;
+    
+}
+.card-information p {
+
+    margin-left: 20px;
+  font-size: 1.05rem;
+  color: #000000;
+  margin-bottom: 0.5rem;
+  
+}
+
+
+@media (min-width: 1400px) {
+  .card-detail {
+    max-width: 1200px; /* más ancha en pantallas grandes */
+        /* más espacio interno */
+  }
+
+  .card-detail img {
+    max-height: 1000px; 
+; /* imagen más grande */
+  }
+
+  .card-information {
+    padding: 60px;
+    font-size: 1.2rem;
+  }
+
+  .card-information h3 {
+    font-size: 2.4rem;
+  }
+  
+
+}
+@media (max-width: 768px) {
+      .card-detail .col-md-8 {
+    text-align: center;
+    padding: 20px;
+  }
+  
+   .card-information {
+    text-align: center;
+    border-left: none;
+    border-top: 3px solid #ffcb05;
+    padding: 25px;
+  }
+
+  .card-information h3 {
+    margin-top: 0;
+    font-size: 1.8rem;
+  }
+
+  .card-information p { 
+     background-color: rgb(251, 229, 242);
+    border: 2px solid rgb(243, 23, 118);
+    color: #000000;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+}

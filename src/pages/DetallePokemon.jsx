@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
+import './DetallePokemon.css'
 
 
 function DetallePokemon() {
@@ -19,59 +20,38 @@ useEffect(() => {
 }, [name]);
 
 return (
+   
     <>
-      {!pokemon ? (
-        <h2>Cargando Pokémon...</h2>
-      ) : (
-        <div className="card-pokemon">
-          <div className="card-body">
-            <img
-              src={pokemon.sprites.other["official-artwork"].front_default}
-              alt={pokemon.name}
-            />
-            <h3>{pokemon.name}</h3>
-            <p>ID: {pokemon.id}</p>
-            <p>Type: {pokemon.types.map(t => t.type.name).join(", ")}</p>
-            <p>Height: {pokemon.height}</p>
-            <p>Weight: {pokemon.weight}</p>
-            <p>Experience: {pokemon.base_experience}</p>
-            <p>Abilities: {pokemon.abilities.map(a => a.ability.name).join(", ")}</p>
-          </div>
+  <div className="detail-container">
+      <div className="card card-detail mb-3" >
+        <div className="row g-0">
+          {!pokemon ? (
+            <h2>Cargando Pokémon...</h2>
+          ) : (
+            <>
+              <div className="col-md-4">
+                <img
+                  className="img-fluid rounded-start"
+                  src={pokemon.sprites.other["official-artwork"].front_default}
+                  alt={pokemon.name}
+                />
+              </div>
+              <div className="card-information col-md-8">
+                <h3 className="card-titulo">{pokemon.name}</h3>
+                <p>ID: {pokemon.id}</p>
+                <p>Type: {pokemon.types.map(t => t.type.name).join(", ")}</p>
+                <p>Height: {pokemon.height}</p>
+                <p>Weight: {pokemon.weight}</p>
+                <p>Experience: {pokemon.base_experience}</p>
+                <p>Abilities: {pokemon.abilities.map(a => a.ability.name).join(", ")}</p>
+              </div>
+            </>
+          )}
         </div>
-      )}
+      </div>
+      </div> 
     </>
   );
 }
 export default DetallePokemon;
 
-
-
- /*  return (
-    <div className="card-pokemon">
-</>
-);
-}
-
-export default DetallePokemon;
-
-
-
- /*  return (
-    <div className="card-pokemon">
-    <div className="card-body">
-      <img src={pokemon.sprites.other["official-artwork"].front_default
-} alt={pokemon.name} />
-      <h3>{pokemon.name}</h3>
-        <p>ID: {pokemon.id}</p>
-        <p>Type: {pokemon.types.map(typeInfo => typeInfo.type.name).join(", ")}</p>
-      <p>Height: {pokemon.height}</p>
-      <p>Weight: {pokemon.weight}</p>
-      <p>Experience: {pokemon.base_experience}</p>
-      <p>Habilidades: {pokemon.abilities.map((a) => a.ability.name).join(", ")}</p>
-    </div> 
-  </div>  
-  );
-}
-
-
- */

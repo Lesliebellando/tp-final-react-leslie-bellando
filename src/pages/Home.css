@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
 .home-container {
-  min-height: 100vh; /* ocupa toda la pantalla */
+  min-height: 90vh; /* ocupa toda la pantalla */
   display: flex;
   gap: 20px;
   justify-content: center; /* centra horizontal */
@@ -12,7 +12,8 @@
 }
 
 .home-card-2 {
-   margin: 10px 0 5px 5px;
+
+   margin:  10px 0 5px 5px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px;
     color: #333;
@@ -49,7 +50,6 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
     font-family: Orbitron, sans-serif;
     font-size: 0.9rem;
     margin-top: 5px;
-    justify-content: center;
 }
 
 .card-title {
@@ -72,7 +72,6 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: auto;
     object-fit: contain;
     margin: 2rem;
-    justify-content: center;
 }   
 
 .tech-icons {
