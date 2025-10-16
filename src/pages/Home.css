@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+.home-container {
+  min-height: 100vh; /* ocupa toda la pantalla */
+  display: flex;
+  gap: 20px;
+  justify-content: center; /* centra horizontal */
+  align-items: center;     /* centra vertical */
+  padding: 20px;
+
+}
+
+.home-card-2 {
+   margin: 10px 0 5px 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    color: #333;
+    font-family: Orbitron, sans-serif;
+    align-items: center;
+border:2rem #ff8177 ;
+border-radius: 10px;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.home-card {
+      background: linear-gradient(120deg, #ffcc70, #ff8177);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    color: #333;
+    font-family: Orbitron, sans-serif;
+    align-items: center;
+border:2rem #ff8177 ;
+border-radius: 10px;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-card:hover, .home-card-2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.card-description {
+    font-size: 1.5rem;
+}
+
+.card-text {
+    font-family: Orbitron, sans-serif;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    justify-content: center;
+}
+
+.card-title {
+    font-size: 1.6rem
+}
+
+
+
+.list-group-item {
+      background-color: lemonchiffon;
+    border: 2px solid black;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
+  justify-content:left;
+  margin: 5px 0;
+
+}
+.card-img-top {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+    margin: 2rem;
+    justify-content: center;
+}   
+
+.tech-icons {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.tech-icons li {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #fff5d6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: lightcoral;
+  font-size: 1.8rem;
+  transition: transform 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.tech-icons li:hover {
+  transform: translateY(-5px);
+  color: gold;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}

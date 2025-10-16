@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
 .app-container {
     position: relative;
   min-height: 100vh;
@@ -27,3 +29,20 @@
   z-index: 1;
 }
 
+.btn-pokemon{
+    background-color: #ffcc70;
+    border: 2px solid #ff8177;
+    padding: 10px 5px;
+    font-family: 'Zen Dots', sans-serif;
+    font-size: 1rem;
+    border-radius: 0.7rem;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-pokemon:hover {
+    background-color: #ff8177;
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.05);
+}

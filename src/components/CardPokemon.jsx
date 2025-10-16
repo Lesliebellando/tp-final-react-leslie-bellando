@@ -18,7 +18,7 @@ export default function CardPokemon({pokemon}) {
         </div>
         <div className="card-pokemon-info text-center p-2">
       <h3 className="card-title">{pokemon.name}</h3>
-        <p className="card-id">ID: {pokemon.id}</p>
+        <p className="card-id">ID {pokemon.id}</p>
         <p className="card-type">Type: {pokemon.types.map(typeInfo => typeInfo.type.name).join(", ")}</p>
   </div>  </div>
   ); }

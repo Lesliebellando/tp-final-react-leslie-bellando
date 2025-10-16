@@ -45,13 +45,13 @@ const fetchAllPokemons =  (desde, hasta) => {
   <h1 className="text-center mb-4">Elige tu Pokémon</h1>
   <div className="row">
           {pokemonsOrdenados.map((pokemon) => (
-            <div key={pokemon.id} className="col-md-3 col-sm-6 mb-4">
+            <div key={pokemon.id} className="col-lg-3 col-md-4 col-sm-6 mb-4">
             <CardPokemon pokemon={pokemon} />
           </div>
     ))}
     </div>
-     <div className="text-center mt-3 mb-4">
-        <button onClick={handleCargarMas}>Cargar más Pokémon</button>
+     <div className="d-grid gap-2 col-sm-6 col-md-4 col-lg-4 mx-auto">
+        <button onClick={handleCargarMas} className="btn-pokemon">Ver más Pokémon</button>
       </div>
     </div>
     
